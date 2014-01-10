@@ -28,7 +28,7 @@ that would be a challenging task: a page from the study on Chopin's study in a m
 You'll find it in the [PNG file](chopin-godowsky.png) in this directory.
 
 As this doesn't contain a title please also refer to
-[chopin-godowsky-title](chopin-godowsky-title.md).
+[chopin-godowsky-title](titles.md).
 
 ---
 
