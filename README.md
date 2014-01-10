@@ -4,7 +4,7 @@ openLilyLib Engraving Challenges
 Challenge 1 - Chopin/Godowsky
 -----------------------------
 
-![](chopin-godowsky-small.png)
+[![](chopin-godowsky-small.png)](chopin-godowsky.png)
 
 As the idea for these challenges arose from engraving complex late-romantic piano music
 it seems natural to start with such a challenge.  But we decided *not* to use a song by Oskar
