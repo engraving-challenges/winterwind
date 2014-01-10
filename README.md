@@ -30,7 +30,7 @@ You'll find it in the [PNG file](chopin-godowsky.png) in this directory.
 
 So now you're ready to take off!
 
-As this is the first challenge the "rules" or "contributor's guide" aren't really refined
+As this is the first challenge the ["General Rules"](../meta/general-rules.md) aren't really refined
 or tested yet. So please don't start hacking away but rather try to check back with someone
 else before.
 
