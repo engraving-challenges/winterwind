@@ -23,8 +23,8 @@ After some pondering I recalled the five volumes of Godowksy's "Studies on Chopi
 that I own but (as a pianist) never dared to touch so far. These pieces have been published
 in Germany, so they are actually free to use (because there isn't such a long time protection
 regarding the *publication* date in the EU).  
-Surprisingly they are comparably simple notation-wise, but I think I found a nice example
-and challenging task: a page from the study on Chopin's study in a minor op. 25/11.
+Surprisingly, most of them are quite simple notation-wise, but I think I found one nice example
+that would be a challenging task: a page from the study on Chopin's study in a minor op. 25/11.
 You'll find it in the [PNG file](chopin-godowsky.png) in this directory.
 
 ---
