@@ -1,0 +1,27 @@
+10 Jan 2014
+
+10:20 Printed off music.  Wah.  Not sure how to do those beaming patterns.  Have never done cross-staff beams, so need to learn that, too.  Think it would be better with title info.  Anyway - off we go.  Start by creating a piece of piano music in Sib.  60 bars of music created - but with 4/4 Time Sig.
+
+Bar 3: first problem.  They are triplets, un-notated, and I've entered them as straight notes.  Can I change them?  Checks manual.  Well - I can change them, but it deletes much of what I've input to "get the timing right".  Easiest to delete the bar and start again.  Finished this stint at 11:00: V1. Note horrible cross-staff note and incorrect beam directions.
+
+2 things about note entry annoy.  I'm using the keyboard, and it frequently guesses the wrong octave for the note - think it just assumed the pitch continues to move in the same direction; the need to hit ctrl-3 before each group of triplets is annoying too.
+
+LH bar 3 is a real nightmare.  Sib is getting confused about which note is a triplet and which isn't - so some are marked too short and some not marked at all.
+
+All of bar 4 is a complete pain.  By default, Sib does not allow enough space for most of the notation, so it's really hard to see what you're editing.
+
+So - I misread the rhythm of bar 6, and entered 4 crochet length beats before checking and finding it's 3 crochet triplets and then 2 crochets.  The only way that it seems possible to correct this is to delete what's been entered and start again.  This is one of my frequent gripes with Sibelius.  If someone knows a better way, please say.
+
+OK - notes entered.  Doing some adjusting.  First thing I find is that the default pedal always closes with a *, so the non-closed pedal marks must be added as symbols.  Next, the "flip" command flips the hidden tuplet markings rather than the stem direction.  Next: tuplet beaming preferences is essentially broken.  "Unfortunately you can't change the default beaming for tuplets directly in Reset Beam Groups, I'm afraid. Daniel Spreadbury Senior Product Manager | Sibelius R & D".
+
+Marcato cannot be flipped by default - needs a change in the "House Style" dialog.  Where a note was on the lower stave but is crossed to the upper, articulations are placed _above_ it by default.
+
+There's a text plug in "add fingering to notes" which is very good for - um - adding fingering quickly.
+
+Beam angles are a bit rubbish by default - the first one in bar 3 was horizonal.  Right end drags angle, left end drags position.
+
+Slurs are default shape, although 2nd half of bar 3 all had to be flipped.
+
+Angled hairpins work automatically - nice.
+
+OK- so I've improved the look as far as bar 3.  Too tired to do much more now.
