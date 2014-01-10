@@ -31,6 +31,8 @@ You'll find it in the [PNG file](chopin-godowsky.png) in this directory.
 
 So now you're ready to take off!
 
+The base branch you should base any work on is `1-godowsky-challenge`.
+
 As this is the first challenge the ["General Rules"](../meta/general-rules.md) aren't really refined
 or tested yet. So please don't start hacking away but rather try to check back with someone
 else before.
