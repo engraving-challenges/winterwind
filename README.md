@@ -27,6 +27,9 @@ Surprisingly, most of them are quite simple notation-wise, but I think I found o
 that would be a challenging task: a page from the study on Chopin's study in a minor op. 25/11.
 You'll find it in the [PNG file](chopin-godowsky.png) in this directory.
 
+As this doesn't contain a title please also refer to
+[chopin-godowsky-title](chopin-godowsky-title.md).
+
 ---
 
 So now you're ready to take off!
