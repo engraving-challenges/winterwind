@@ -1,8 +1,8 @@
 # First draft #
 
-I cobbled together this first draft in about two hours. It is full of mistakes, returns several warnings, and I haven't yet implemented the fingerings or the bizarre beaming patterns. All the voicing is complete, however. The most obvious error in the result is that the third line runs off the page! LilyPond's spacing engine simply wasn't able to cope with two measures per system. Another issue is the yucky spacing of the sixteenth notes due to LilyPond compressing them together and leaving to room for accidentals. These problems will need to be fixed in adjustment.
+I cobbled together this first draft in about two hours. It returns several warnings, probably has several mistakes, and I haven't yet implemented the fingerings. All the voicing is complete, however. The most obvious error in the result is that the third line runs off the page! LilyPond's spacing engine simply wasn't able to cope with two measures per system. Another issue is the yucky spacing of the sixteenth notes due to LilyPond compressing them together and leaving to room for accidentals. These problems will need to be fixed in adjustment.
 
-I made a lot of adjustments to the engraving while entering it, because I didn't read the instructions until halfway through, and I am a horrible perfectionist when it comes to music notation. After realizing my errors, I restricted the adjustments to the following:
+I made a lot of adjustments to the engraving while entering it, because I didn't read the instructions until halfway through, and I am a horrible perfectionist when it comes to music notation. After realizing my errors, I backtracked and restricted the adjustments to the following:
 
 - voice assignment
 - stem/slur/script/dynamic directions
