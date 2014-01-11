@@ -25,7 +25,8 @@ rightOne = \relative c'' {
 \omit TupletBracket\omit TupletNumber\tuplet 3/2{ \once\override Beam #'positions = #'(6 . 10) \once\override Hairpin #'rotation = #'(7 0 0) \once \override DynamicText #'extra-offset = #'( 0.0 . -2.0 ) g'8[(\(\!^\mf^\<  fis) <a g'>(\once\set fingeringOrientations = #'(left)  <fis'-4>) <a g'>( <c fis>])\)\!}\times 2/3{ \set fingeringOrientations = #'(left) \once\override Hairpin #'rotation = #'(-7 0 0)   <g-1 fis'-5>[\accent(\(^\> <c e>) <g, fis'>( <c e>) <g, fis'>(  <e'-4>)\)\!]} %\bar 3 
 \once\override Beam #'positions = #'(6 . 10)  \tuplet 3/2{ \once\override Hairpin #'rotation = #'(7 0 0)  g8[(\(^\<  fis) <a g'>( fis'-\tweak #'X-offset #0 -\tweak #'Y-offset #2 -2 -\tweak #'X-offset #0 -\tweak #'Y-offset #4 -4) <a g'>( <dis fis>]\!)\)}\times 2/3{ \once\override Hairpin #'rotation = #'(-7 0 0)  <g, fis'>^\>[\accent(\( <b e>) <g, fis'>( <b e>) fis^1^5(  e)\)\!]} %\bar 4 
 \tuplet 3/2{gis8^1^5 ( fis) s } fis'8.-\tweak #'Y-offset #1.2 \tweak #'X-offset #-3.1 -2 -\tweak #'Y-offset #0 \tweak #'X-offset #-3 -1  \accent fis16 -\tweak #'Y-offset #3 -1\accent \tuplet 3/2{ <fis fis'>4\accent b,8\rest}  \once \override NoteColumn.force-hshift = #-1.8 fis8.\accent fis16\accent \tuplet 3/2 {\once\override Hairpin #'rotation = #'(7 0 0)  fis4^\<^2^5^\accent fis'4 b8.\accent <b-2>16\accent} <dis b'>4 \! b,4\rest %bar6
-\stemDown \ottava 1 <b' e g b>4-._\ff\( q8.  <\parenthesize b e g b>16-. <b e g b>4-. 
+\stemDown  \once \override Staff.OttavaBracket.extra-offset = #'(-2 . 0)
+  \once \override Staff.OttavaBracket.shorten-pair = #'(0 . 24.5) \ottava 1 <b' e g b>4-._\ff\( q8.  <\parenthesize b e g b>16-. <b e g b>4-. 
 \once \override Script.avoid-slur = #'inside <c e c'>4-.\accent <b e b'>4-.--\< <g b g'>4-. <b e g b>2-.\! \) 
 
 }
@@ -84,7 +85,8 @@ fis,4\sustainOn s2.    <<{s4 \tuplet 3/2 {\stemDown\clef "treble" dis''8_\( cisi
 \set beatStructure = #'( 3 3 ) \once\override Beam #'positions = #'(6 . 8)  \omit TupletNumber \tuplet 3/2{\stemUp  e,,16_1[ b_5 dis_3_4 fis_2 e'-\tweak #'Y-offset #0  _1 \once \override Stem.beaming = #(cons (list 1 0) (list 1)) b-\tweak #'Y-offset #0 _5 \once \override Stem.beaming = #(cons (list 0) (list -1 0)) \clef "treble" \once \override Staff.SustainPedal.stencil =
   	#(lambda (grob) (grob-interpret-markup grob 
  	(markup #:concat ( "(" #:musicglyph "pedal.Ped"".)")))) dis16-\tweak #'Y-offset #0 -3-\tweak #'Y-offset #2 -4\sustainOn fis -\tweak #'Y-offset #0 -2 e' b-\tweak #'Y-offset #2 -2 dis \change Staff = "right" \stemDown <fis-1>16]} \change Staff = "left" \stemUp <fis, b>4\accent \clef "bass" <b,,, b'>8.^\< q16\! 
-\omit TupletBracket}>> s8 s2.  s2. s8  \change Staff = "right"  \omit TupletNumber \omit TupletBracket \tuplet 3/2 {s8   \override Hairpin.padding = #'()      \tweak Stem.length #22  a'''!4*1/4^\markup\italic"mano destra a piacere"  \< \tweak Stem.length #22  b \tweak Stem.length #21  aes \tweak Stem.length #25 e'\! }
+\omit TupletBracket}>> s8 s2.  s2. s8  \change Staff = "right"  \omit TupletNumber \omit TupletBracket \tuplet 3/2 {s8   \once \override TextScript #'avoid-slur = #'inside
+\once \override Hairpin #'outside-staff-priority = ##f      \tweak Stem.length #22  a'''!4*1/4^\markup\italic"mano destra a piacere"  \< \tweak Stem.length #22  b \tweak Stem.length #21  aes \tweak Stem.length #25 e'\! }
 }
 
 \score {
