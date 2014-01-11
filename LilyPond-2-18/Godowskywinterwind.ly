@@ -4,7 +4,7 @@
   % Remove default LilyPond tagline
   tagline = ##f
 }
- #(set-global-staff-size 16)
+ #(set-global-staff-size 16.5)
 \paper {
   #(set-paper-size "letter" )
    indent = 0\cm 
@@ -74,7 +74,7 @@ leftTwo = \relative c' {
   	(markup #:concat ( "(" #:musicglyph "pedal.Ped"".)"))))  dis'4-\tweak #'Y-offset #-6 \sustainOn  s2  \once\override Hairpin #'rotation = #'(7 -1 0) dis,4\sustainOn_\<  \once \override Staff.SustainPedal.stencil =
   	#(lambda (grob) (grob-interpret-markup grob 
   	(markup #:concat ( "(" #:musicglyph "pedal.Ped"".)")))) dis'4\sustainOn\! s2  %bar 4
-fis,4\sustainOn s2.    <<{s4 \tuplet 3/2 {\stemDown\clef "treble" dis''8_\( cisis8 dis8}  b4\sustainOn\) s4}\\{s4 \times 2/3{ s8. \once\override Beam #'positions = #'(-1.4 . -1.4)  b'8 b16^\accent } s4}\\{ \set Timing.beamExceptions = #'()
+fis,4\sustainOn s2.    <<{s4 \tuplet 3/2 {\stemDown\clef "treble" dis''8_\( cisis8 dis8}  b4\sustainOn\) s4}\\{s4 \times 2/3{ s8. \once\override Beam #'positions = #'(-1.45 . -1.45) \once \override Beam #'beam-thickness = #0.32   b'8 b16^\accent } s4}\\{ \set Timing.beamExceptions = #'()
 \set subdivideBeams = ##t
 \set baseMoment = #(ly:make-moment 1/6)
 \set beatStructure = #'( 3 3 )   \tuplet 3/2{\stemUp  e,,16_1[ b_5 dis_3_4 fis_2 e'_1 \once \override Stem.beaming = #(cons (list 1 0) (list 1)) b_5 \once \override Stem.beaming = #(cons (list 0) (list -1 0)) \clef "treble" \once \override Staff.SustainPedal.stencil =
