@@ -155,24 +155,6 @@ voiceB = \transpose c c' {
   \tuplet 3/2 { s2 \tiny a,16 b, as, e }
 }
 
-%{
-voiceC = {
-  \chu
-  \tuplet 6/4 2 {
-    | \stemDown g8[ \chd \stemUp fis16 b f g e b dis g d b] \stemNeutral cis[ e c g b, e ais, g a, c gis, e]
-    | g,[ b, fis, e f, g, e, b, dis, g, d, b,] cis,[ e, c, g, b,, e, ais,, g, b,, g, e, b,]
-    | \voiceOne b,[\< fis, a, c b fis a c' b' fis' a' c']\! \voiceTwo a'[\> e' g' c' a e g c a, e, ais, g,]
-    | \voiceOne b,[\< fis, a, c b fis a c']\! \voiceTwo c''[ fis' a' b] a'[\> e' g' b a e g b, a, e, g, b,]
-    | \voiceOne e[\< b, dis fis e' b dis' fis' \clef treble cis'' fis' b' bis']\! dis''[\> ais' cis'' fis' dis' ais cis' fis \clef bass dis ais, cis <b,, fis,>]\!
-    | e[ b, dis fis e' b \oneVoice \clef treble dis' fis' e'' b' dis'' \chu fis'']
-  }
-  b''4 \chd \oneVoice s4
-  \tuplet 6/4 2 {
-    | s8 \clef treble \transpose c c'' { fis16[ b f g e b dis g d b] cis[ e c g b, e ais, g a, c gis, e] }
-    | \transpose c c' { g[ b fis e' f g e b dis g d b] cis[ e c g b, e ais, g \crossStaff { a, b, as, e] } }
-  }
-}%}
-
 bLO = \once \override Stem.beaming = #(cons (list 0 1) (list 0))
 bRO = \once \override Stem.beaming = #(cons (list 0) (list 0 1))
 bLI = \once \override Stem.beaming = #(cons (list 0 -1) (list 0))
@@ -241,6 +223,8 @@ sustain = {
 \header {
   title = "Fr. Chopin"
   subtitle = "Op. 25 No. 11"
+  piece = "No. 42"
+  composer = "Leopold Godowsky"
 }
 
 \score {
