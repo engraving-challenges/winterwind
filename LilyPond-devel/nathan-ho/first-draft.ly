@@ -1,4 +1,6 @@
-\version "2.17.97"
+\version "2.19.0"
+
+\pointAndClickOff
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Engraver allowing \crossStaff with opposite stem directions
@@ -92,7 +94,20 @@ chu = \change Staff = "up"
 chd = \change Staff = "down"
 
 global = {
+  \tempo "Allegro con brio." 2=58-66
   \accidentalStyle modern
+  \override Staff.TimeSignature.stencil =
+    #(lambda (grob)
+       (grob-interpret-markup
+         grob
+         #{
+           \markup {
+             \override #'(baseline-skip . 0) \number \vcenter \center-column {
+               "12" "8" \vspace #1/3 \musicglyph #"timesig.C44" \vspace #1/3
+             }
+           }
+         #}))
+  \time 4/4
 }
 
 conductor = {
@@ -107,11 +122,11 @@ voiceA = \transpose c c' {
   | <e b>4-.(^\markup { \italic "meno" \dynamic "f" } <e g b>8.-. q16-. <b, e b>4-. <c e c'>4-.->
   | <b, e b>4-_ <g, b, g>4-. <b, e g b>2-.)
   \tuplet 6/4 2 {
-    | g8[(\(^\mf\< fis) <a g'>( fis') <a' g''>( <c'' fis''>])\)\! <g' fis''>[(\(->\> <c'' e''>) <g fis'>( <c' e'>) <g, fis>( e])\)
-    | g[(\(\< fis) <a g'>( fis') <a' g''>( <dis'' fis''>])\)\! <g' fis''>[(\(->\> <b' e''>) <g fis'>( <b e'>) fis( e])\)\!
+    | g8[(\(^\mf\< fis) <a g'>( fis')-4 <a' g''>( <c'' fis''>])\)\! <g'-5 fis''-1>[(\(->\> <c'' e''>) <g fis'>( <c' e'>) <g, fis>( e])\)-4
+    | g[(\(\< fis) <a g'>( fis')-4 <a' g''>( <dis'' fis''>])\)\! <g' fis''>[(\(->\> <b' e''>) <g fis'>( <b e'>) fis(-5 e]-4)\)\!
   }
-  | \tuplet 3/2 { gis8( fis8) s8 } fis'8.-> fis'16-> <fis' fis''>4_> fis8.-> fis16->
-  | \tuplet 3/2 { fis4->\< fis'4 b'8.-> b'16-> } <dis'' b''>4 r4\!
+  | \tuplet 3/2 { gis8(-5 fis8) s8 } fis'8.-> fis'16->-1 <fis' fis''>4_> fis8.-> fis16->
+  | \tuplet 3/2 { fis4->-5\< fis'4 b'8.-> b'16->-2 } <dis'' b''>4 r4\!
   \ottava #1
   \oneVoice
   \transpose c c'' {
@@ -123,11 +138,11 @@ voiceA = \transpose c c' {
 voiceB = \transpose c c' {
   \chu
   | s1*2
-  | \voiceTwo <c a,>4-> c'8.-> \chd \voiceOne c'16-> c'4-> c8.-> \chu \voiceTwo c16->
-  | <c a,>4-> \tuplet 3/2 { \once \slurUp d'8->( \chd \voiceOne c'8.-> b16-> } b4) \tuplet 3/2 { \once \slurDown d8->( \chu \voiceTwo c8.-> b,16-> }
+  | \voiceTwo <c a,>4-> c'8.->-2 \chd \voiceOne c'16-> c'4->-1 c8.->-1 \chu \voiceTwo c16->-2
+  | <c a,>4-> \tuplet 3/2 { \once \slurUp d'8->(-2 \chd \voiceOne c'8.-> b16-> } b4)-1 \tuplet 3/2 { \once \slurDown d8->(-1 \chu \voiceTwo c8.->-2 b,16->-2 }
   \tuplet 3/2 4 {
-    | b,4) <ais ais'>8( <b b'>8\< <dis' dis''>8 <gis' gis''>8\! <ais' e''>4) r8 e4 <fis, ais,>8
-    | ais,8[( b,]) ais[( b]) <gis' gis''>[ <fis' fis''>]
+    | b,4)-1 <ais ais'>8( <b-1 b'-5>8\< <dis' dis''>8 <gis' gis''>8\! <ais' e''>4) r8 e4 <fis, ais,>8
+    | ais,8[(-2 b,])-1 ais[( b]) <gis' gis''>[ <fis' fis''>]
   }
   s2
   | s1
@@ -167,11 +182,11 @@ voiceC = {
   \chu
   \tuplet 6/4 2 {
     | \stemDown g8[ \chd \stemUp fis16 \bLO b \bRO f \bLI g \bRI e \bLO b \bRO dis g d b] \stemNeutral cis[ e c \bLO g \bRO b, \bLI e \bRI ais, \bLO g \bRO a, c gis, e]
-    | g,[ b, fis, \bLO e \bRO f, \bLI g, \bRI e, \bLO b, \bRO dis, g, d, b,] cis,[ e, c, \bLO g, \bRO b,, \bLI e, \bRI ais,, \bLO g, \bRO b,, g, e, b,]
-    | \voiceOne b,[\< fis, a, \bLO c \bRO b \bLI fis \bRI a \bLO c' \bRO b' fis' a' c']\! \voiceTwo a'[\> e' g' \bLO c' \bRO a \bLI e \bRI g \bLO c \bRO a, e, ais, g,]
-    | \voiceOne b,[\< fis, a, \bLO c \bRO b fis a c']\! \voiceTwo c''[ fis' a' b] a'[\> e' g' \bLO b \bRO a \bLI e \bRI g \bLO b, \bRO a, e, g, b,]
-    | \voiceOne e[\< b, dis fis \bLO e' \bRO b \bLI dis' \bRI fis' \clef treble \bLO cis'' \bRO fis' b' bis']\! dis''[\> ais' cis'' \bLO fis' \bRO dis' \bLI ais \bRI cis' \bLO fis \clef bass \bRO dis ais, cis <b,, fis,>]\!
-    | e[ b, dis \bLO fis \bRO e' \bLI b \oneVoice \clef treble \bRI dis' \bLO fis' \bRO e'' b' dis'' \chu fis'']
+    | g,[ b, fis, \bLO e \bRO f, \bLI g, \bRI e, \bLO b, \bRO dis, g, d, b,] cis,[ e, c, \bLO g, \bRO b,,-4 \bLI e,-2 \bRI ais,,-5 \bLO g,-1 \bRO b,,-5 g,-2 e,-3 b,]-1
+    | \voiceOne b,[-1\< fis,-4 a,-3 \bLO c-2 \bRO b-1 \bLI fis-4 \bRI a-3 \bLO c'-2 \bRO b'-1 fis'-3 a'-2 c']\! \voiceTwo a'[-2\> e'-4 g'-2 \bLO c'-5 \bRO a-1 \bLI e-3 \bRI g-2 \bLO c-5 \bRO a,-1 e,-5 ais,-2 g,]-3
+    | \voiceOne b,[\< fis, a, \bLO c \bRO b fis a c']\! \voiceTwo c''[-1 fis'-3 a'-2 b] a'[-2\> e'-4 g'-2 \bLO b-5 \bRO a-1 \bLI e-3 \bRI g-2 \bLO b,-5 \bRO a,-1 e,-5 g,-4 b,]-2
+    | \voiceOne e[\< b,-3 dis-2 fis-1 \bLO e'-1 \bRO b-5 \bLI dis'-3 \bRI fis'-2 \clef treble \bLO cis''-1 \bRO fis'-5 b'-3 bis']-2\! dis''[-1\> ais'-3 cis''-2 \bLO fis'-5 \bRO dis'-1 \bLI ais \bRI cis' \bLO fis \clef bass \bRO dis-1 ais,-2 cis-1 <b,, fis,>]\!
+    | e[-1 b,-5 dis-3 \bLO fis-2 \bRO e'-1 \bLI b-5 \oneVoice \clef treble \bRI dis'-4 \bLO fis'-2 \bRO e'' b'-2 dis'' \chu fis'']-1
   }
   b''4 \chd \oneVoice s4
   \tuplet 6/4 2 {
@@ -185,18 +200,18 @@ voiceD = \transpose c c, {
   \voiceTwo
   | \tuplet 3/2 { \once \stemUp e,8 s8 s8 } s2.
   | s1
-  | dis4 dis'4 s2
+  | dis4-5 dis'4-5 s2
   | dis4 dis'4 s2
   | fis4 s2.
   | s4
   \transpose c c'' <<
     { \tuplet 3/2 { dis8( cisis8 dis8 } b,4) }
     \new Voice {
-      \voiceTwo \tuplet 3/2 { s8. \once \dynamicUp b8\> b16\! }
+      \voiceTwo \tuplet 3/2 { s8. b8-2 b16-2 }
       \voiceOne <fis b>4->
     }
   >>
-  \oneVoice \clef bass <b, b>8. q16
+  \oneVoice \clef bass \once \dynamicUp <b, b>8.\< q16\!
   | \tuplet 3/2 { <e, e>8-^ s8 s8 }
 }
 
@@ -220,6 +235,7 @@ sustain = {
 
 \paper {
   indent = 0\cm
+  page-count = #1
 }
 
 \header {
@@ -260,10 +276,6 @@ sustain = {
     \context {
       \PianoStaff
       \consists #Kneed_span_stem_engraver
-    }
-    \context {
-      \Staff
-      \omit TimeSignature
     }
     \context {
       \Voice
