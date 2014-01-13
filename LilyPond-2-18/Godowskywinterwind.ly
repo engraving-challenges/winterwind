@@ -1,5 +1,66 @@
 \version "2.18.0"
 
+#(define (parenthesize-callbackright callback)
+   (define (parenthesize-stencil grob)
+     (let* ((fn (ly:grob-default-font grob))
+            (pclose (ly:font-get-glyph fn "accidentals.rightparen"))
+            (popen (ly:font-get-glyph fn ""))
+            (subject (callback grob))            
+            ;; get position of stem
+            (stem-pos (ly:grob-property grob 'stem-attachment))            
+            ;; remember old size
+            (subject-dim-x (ly:stencil-extent subject X))
+            (subject-dim-y (ly:stencil-extent subject Y)))
+
+       ;; add parens
+       (set! subject
+             (ly:stencil-combine-at-edge 
+              (ly:stencil-combine-at-edge subject X RIGHT pclose 0)
+              X LEFT popen 0))
+
+       ;; adjust stem position
+       (set! (ly:grob-property grob 'stem-attachment)
+             (cons (- (car stem-pos) 0.43) (cdr stem-pos)))
+
+       ;; adjust size
+       (ly:make-stencil
+        (ly:stencil-expr subject)
+        (interval-widen subject-dim-x 0.5)
+        subject-dim-y)))
+   
+   parenthesize-stencil)
+
+
+#(define (parenthesize-callbackleft callback)
+   (define (parenthesize-stencil grob)
+     (let* ((fn (ly:grob-default-font grob))
+            (pclose (ly:font-get-glyph fn ""))
+            (popen (ly:font-get-glyph fn "accidentals.leftparen"))
+            (subject (callback grob))            
+            ;; get position of stem
+            (stem-pos (ly:grob-property grob 'stem-attachment))            
+            ;; remember old size
+            (subject-dim-x (ly:stencil-extent subject X))
+            (subject-dim-y (ly:stencil-extent subject Y)))
+
+       ;; add parens
+       (set! subject
+             (ly:stencil-combine-at-edge 
+              (ly:stencil-combine-at-edge subject X RIGHT pclose 0)
+              X LEFT popen 0))
+
+       ;; adjust stem position
+       (set! (ly:grob-property grob 'stem-attachment)
+             (cons (- (car stem-pos) 0.43) (cdr stem-pos)))
+
+       ;; adjust size
+       (ly:make-stencil
+        (ly:stencil-expr subject)
+        (interval-widen subject-dim-x 0.5)
+        subject-dim-y)))
+   
+   parenthesize-stencil)
+
 
 \header {
   % Remove default LilyPond tagline
@@ -88,7 +149,7 @@ fis,4\sustainOn s2.    <<{s4 \tuplet 3/2 {\stemDown\clef "treble" dis''8_\( cisi
   	#(lambda (grob) (grob-interpret-markup grob 
  	(markup #:concat ( "(" #:musicglyph "pedal.Ped"".)")))) dis16-\tweak #'Y-offset #0 -3-\tweak #'Y-offset #2 -4\sustainOn fis -\tweak #'Y-offset #0 -2 e' b-\tweak #'Y-offset #2 -2 dis \change Staff = "right" \stemDown fis16-\tweak #'X-offset #-1 -\tweak #'Y-offset #1 -1]} \change Staff = "left" \stemUp <fis, b>4\accent \clef "bass" <b,,, b'>8.^\< q16\! 
 \omit TupletBracket}>> s8 s2.  s2. s8  \change Staff = "right"  \omit TupletNumber \omit TupletBracket \tuplet 3/2 {s8   \once \override TextScript #'avoid-slur = #'inside
-\once \override Hairpin #'outside-staff-priority = ##f \override Stem #'cross-staff = ##t  \tiny \override Stem #'length = #18   a'''!4*1/4^\markup\italic"mano destra a piacere"    b  aes \override Stem #'length = #21 e'}
+\once \override Hairpin #'outside-staff-priority = ##f \override Stem #'cross-staff = ##t  \tiny \once\override NoteHead #'stencil = #(parenthesize-callbackleft ly:note-head::print) \override Stem #'length = #18  \once\override TextScript #'extra-offset = #'(-2 . -3) a'''!4*1/4^\markup\italic"mano destra a piacere"    b  aes \override Stem #'length = #21 \override NoteHead #'stencil = #(parenthesize-callbackright ly:note-head::print)  e'}
 }
 
 \score {
