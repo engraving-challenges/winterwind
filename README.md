@@ -1,6 +1,11 @@
-#### openLilyLib Engraving Challenges
+If you are new to Engraving Challenges,
+---------------------------------------
 
-# Challenge 1 - Chopin/Godowsky
+...please don't start by working on this one!  Rather, read instructions in the
+[main repository](https://github.com/engraving-challenges/main)
+and then start by working on [this challenge](https://github.com/engraving-challenges/estrella).
+
+### Chopin/Godowsky study
 
 [![](chopin-godowsky-small.png)](chopin-godowsky.png)
 
