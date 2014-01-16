@@ -1,0 +1,6 @@
+*.ps
+*.midi
+*.mid
+*.log
+*~
+# do NOT ignore pdfs.
