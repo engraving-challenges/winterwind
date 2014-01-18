@@ -51,9 +51,10 @@ I want to emphasize the default output of Finale. Therefore I have not take the 
 Note entry times are described below:
 
  - `l.h.` 16th note passage - 00:30:00
- - `time signature` changes and formatting: 00:30:00
+ - `time signature` changes and formatting - 00:30:00
  - `r.h.` monophonic parts - 00:02:00
  - `l.h.` and `r.h.` polyphony - 2:45:00 (this is mainly because half the time was strugglin to make voice definitions work and so on)
+ - reworking 6th measure to revert to 12/8 (instead of 5/4) - 00:30:00
  - Total research time (which probably shouldn't be recorded officially since we are all assuming a general level of expertise) - 1:00:00
 
 #### Final(e) comments
