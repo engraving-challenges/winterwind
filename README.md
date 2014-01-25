@@ -1,19 +1,18 @@
 If you are new to Engraving Challenges,
 ---------------------------------------
 
-...please don't start by working on this one!  Rather, read instructions in the
+...we suggest that you don't start with this one -
+rather, read the instructions in the
 [main repository](https://github.com/engraving-challenges/main)
-and then start by working on [this challenge](https://github.com/engraving-challenges/estrella).
+and then start by working on
+[this challenge](https://github.com/engraving-challenges/estrella).
 
 ### Chopin/Godowsky study
 
 [![](chopin-godowsky-small.png)](chopin-godowsky.png)
 
-As the idea for the **openLilyLib Engraving Challenges** arose from engraving complex
+As the idea for the **_Scores of Beauty_ Engraving Challenges** arose from engraving complex
 late-romantic piano music it seemed natural to start with such a challenge.
-But we decided *not* to use a song by Oskar Fried as the first task because we thought
-it appropriate to start something from scratch ourselves. The issue was to find something
-of utmost complexity in the late romantic piano repertoire, but something that's clearly out of copyright.  
 We found something which we found ideal:
 [Leopold Godowsky](http://en.wikipedia.org/wiki/Leopold_Godowsky)'s
 arrangements of Schubert songs, a music that is flourishing with wonderful polyphonic
@@ -33,20 +32,14 @@ You'll find it in the [PNG file](chopin-godowsky.png) in this directory.
 As this doesn't contain a title please also refer to
 [chopin-godowsky-title](titles.md).
 
+**Important:** please make sure you read the [instructions](http://github.com/engraving-challenges/main/blob/master/README.md#instructions) before starting any work!
+
 ---
 
-So now you're ready to take off!
+Please remember: this is a challenge and only partly a contest. There is no deadline.
+The point is to try creating the most beautiful engraving with notation package of your choice,
+and document your progress on your way there.
 
-For general information on the challenges or the Contributor's guide please refer to the
-[main repo](https://github.com/engraving-challenges/main).
-
-As this is the first challenge the
-[General Rules](https://github.com/engraving-challenges/main/blob/master/general-rules.md)
-aren't really refined or tested yet. So please don't start hacking away but rather try to check back
-with someone else before.
-
-Please remember: This is a challenge and only partly a contest. It is not the goal to finish
-the assignment as fast as possible, it's not even mandatory to actually *finish* it -
-you may also concentrate on a single staff or even measure. The point is trying to get the
-most perfect end-result and to create a retraceable, well-documented progress on your way
-there.
+For general information on the challenges as well as specific instructions
+for participants, please refer to the
+[main repository](https://github.com/engraving-challenges/main).
