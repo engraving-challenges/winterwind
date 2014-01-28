@@ -30,5 +30,10 @@ setting the slopes as well... it won't be a fast process and must be done when t
 - Measure 6: a half-note made into 6-et
 - Started voice 2 - terrible collisions... :(
 - Put in a spacer in bar 6 as I just couldn't see anything :)
+- After an hour of work, I think most of the notes are there, but now everything is so collided that I decided to start from the first measure and clean everything up, 
+hiding invisible elements and adding spacers to avoid the most annoying collisions
+- Measure 4 adding other voices: switching between 1st and 2nd voices here and there to allow collision detection and the tie in right hand last note
+- It is very annoying that musescore jumps to the next page... but Sibelius would do the same :) and had I a bigger screen...
+
 
 
