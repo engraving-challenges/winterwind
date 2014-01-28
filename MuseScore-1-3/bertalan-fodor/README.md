@@ -35,6 +35,9 @@ hiding invisible elements and adding spacers to avoid the most annoying collisio
 - Measure 4 adding other voices: switching between 1st and 2nd voices here and there to allow collision detection and the tie in right hand last note
 - It is very annoying that musescore jumps to the next page... but Sibelius would do the same :) and had I a bigger screen...
 - Adding articulations and symbols - I move Ped symbols now to allow copy&pasting the changed location as well
-
+- Default fingering positions are awful, changing a bit just to let me see the numbers. Later I'll move them manually and change their font.
+- In bar 3 there are some double fingerings, so I moved them away now, because later even selecting them would be hard
+- Same for articulation marks: I moved them to more easy tweaking later
+- I can add symbols to symbols, so I can copy and paste the parenthesized (Ped) sign
 
 
