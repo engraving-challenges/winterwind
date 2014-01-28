@@ -23,4 +23,6 @@ setting the slopes as well... it won't be a fast process and must be done when t
 #### Note entry
 - The first deep note was written by just counting the ledger lines -- I didn't know what note is that :)
 - The second voice rests had to be made invisible
+- Measure 3 and 4 right hands are quite similar, so I added all the articulations and dynamics etc. in this phase to allow me copy and paste
+- The slurs had to been flipped, just as the beams' direction
 
