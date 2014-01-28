@@ -19,10 +19,16 @@ as the slope of the beam can change.
 - I just realized that they are note quarter notes, but tuplets...
 - Anyway, probably I will do some tricks with moving manually 8th notes and 16th notes to have correct beaming, keeping only the beam visible. That will need manually
 setting the slopes as well... it won't be a fast process and must be done when the line breaks and every positions are fixed
+- In measure 6 there is a strange use of tuplets, so I have to be quite careful
 
 #### Note entry
 - The first deep note was written by just counting the ledger lines -- I didn't know what note is that :)
 - The second voice rests had to be made invisible
 - Measure 3 and 4 right hands are quite similar, so I added all the articulations and dynamics etc. in this phase to allow me copy and paste
 - The slurs had to been flipped, just as the beams' direction
+- In measure 5 I turned off the tuplet numbers and brackets
+- Measure 6: a half-note made into 6-et
+- Started voice 2 - terrible collisions... :(
+- Put in a spacer in bar 6 as I just couldn't see anything :)
+
 
