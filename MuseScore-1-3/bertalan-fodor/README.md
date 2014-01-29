@@ -39,5 +39,7 @@ hiding invisible elements and adding spacers to avoid the most annoying collisio
 - In bar 3 there are some double fingerings, so I moved them away now, because later even selecting them would be hard
 - Same for articulation marks: I moved them to more easy tweaking later
 - I can add symbols to symbols, so I can copy and paste the parenthesized (Ped) sign
+- I'm at around 2 hours of work
+- There are some alternative fingerings: I add both of them, but with offset
 
 
