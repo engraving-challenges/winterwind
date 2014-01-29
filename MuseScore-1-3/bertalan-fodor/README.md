@@ -57,5 +57,7 @@ accent mark as well)
 - Moved articulations
 - Switched to tight spacing. Doesn't help, I reduce the sizes instead. I would like to get the first two bars in the same line.
 - With an 1.5mm spacing everything fits quite right, though i have to reposition the manually adjusted symbols.
+- Selected all Fingering elements, then change their font to MScore1 8pt
+- In this version of MuseScore vertical positioning of fingering is only possible with the mouse, so I tried to line them up viewing with large zoom
 
 
