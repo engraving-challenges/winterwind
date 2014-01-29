@@ -55,6 +55,7 @@ accent mark as well)
 - Added spacer
 - Added hairpins, second aligned by hand
 - Moved articulations
-- Switched to tight spacing. Not good.
+- Switched to tight spacing. Doesn't help, I reduce the sizes instead. I would like to get the first two bars in the same line.
+- With an 1.5mm spacing everything fits quite right, though i have to reposition the manually adjusted symbols.
 
 
