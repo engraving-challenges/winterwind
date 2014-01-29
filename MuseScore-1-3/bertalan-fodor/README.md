@@ -60,4 +60,10 @@ accent mark as well)
 - Selected all Fingering elements, then change their font to MScore1 8pt
 - In this version of MuseScore vertical positioning of fingering is only possible with the mouse, so I tried to line them up viewing with large zoom
 
+##### M3
+- Manually edited the first righthand slurs - luck that I have a hand engraved score to look at, otherwise it would be hard to find a good looking shape (it's still hard this way)
+- To my surprise MuseScore 1.3 doesn't support rotating the hairpin. So I'm drawing this with 2 normal lines - fortunately normal lines can be attached to note positions as well.
+-- An annoying bug made it somewhat hard - selection is based on bounding box (at least for beams and lines, and I just couldn't select what I wanted)
+
+
 
