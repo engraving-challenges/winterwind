@@ -41,5 +41,6 @@ hiding invisible elements and adding spacers to avoid the most annoying collisio
 - I can add symbols to symbols, so I can copy and paste the parenthesized (Ped) sign
 - I'm at around 2 hours of work
 - There are some alternative fingerings: I add both of them, but with offset
-
+- After another 30 minutes, I'm at the end again, after adding all fingerings and probably all symbols.
+- But is very hard to go over and over the score, so now I'm doing measures one by one. (Keeping only the special beaming to the end of the whole process.)
 
