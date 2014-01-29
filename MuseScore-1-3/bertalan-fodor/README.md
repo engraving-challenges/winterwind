@@ -44,3 +44,17 @@ hiding invisible elements and adding spacers to avoid the most annoying collisio
 - After another 30 minutes, I'm at the end again, after adding all fingerings and probably all symbols.
 - But is very hard to go over and over the score, so now I'm doing measures one by one. (Keeping only the special beaming to the end of the whole process.)
 
+#### Making position adjustments measure by measure
+##### M1
+- moved meno F and changed to italic
+- moved staccato notes manually with the keyboard and the mouse (in the last case, as due to some strange MuseScore beavior, changing the dot position changed the 
+accent mark as well) 
+- changed dim. and made it italic
+
+##### M2
+- Added spacer
+- Added hairpins, second aligned by hand
+- Moved articulations
+- Switched to tight spacing. Not good.
+
+
