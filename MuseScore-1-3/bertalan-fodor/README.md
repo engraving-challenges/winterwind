@@ -64,6 +64,6 @@ accent mark as well)
 - Manually edited the first righthand slurs - luck that I have a hand engraved score to look at, otherwise it would be hard to find a good looking shape (it's still hard this way)
 - To my surprise MuseScore 1.3 doesn't support rotating the hairpin. So I'm drawing this with 2 normal lines - fortunately normal lines can be attached to note positions as well.
 -- An annoying bug made it somewhat hard - selection is based on bounding box (at least for beams and lines, and I just couldn't select what I wanted)
-
+- I wanted to fix the cross staff beam slant, but again a bug in MuseScore 1.3 - If you change anything it is incorrectly drawn
 
 
