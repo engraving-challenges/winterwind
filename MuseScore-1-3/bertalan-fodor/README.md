@@ -67,3 +67,9 @@ accent mark as well)
 - I wanted to fix the cross staff beam slant, but again a bug in MuseScore 1.3 - If you change anything it is incorrectly drawn
 - Added the left hand crescendo hairpin manually drawing 2 lines - I think literally drawing stuff on a score makes it more beautiful, as it is really hand "engraved"
 - arount 160 minutes of net work now
+- The line between fingerings are simple _ character in a separate text item
+- 10 minutes later...
+
+#### M4
+- Same as previous
+- 25 minutes
