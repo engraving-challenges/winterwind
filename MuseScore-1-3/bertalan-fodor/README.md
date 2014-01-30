@@ -70,6 +70,18 @@ accent mark as well)
 - The line between fingerings are simple _ character in a separate text item
 - 10 minutes later...
 
-#### M4
+##### M4
 - Same as previous
 - 25 minutes
+
+##### M5
+- Funny collision avoiding in F#
+- Avoided collisions in first part of measure 5 by moving things around, also changed slurs
+- The dot should be moved in the fs8. in the right hand, but in MuseScore this is not possible. The workaround I used:
+-- Make the notehead and the dot invisible
+-- Add a notehead symbol to the invisible notehead - it will appear just at the right place
+-- Add a dot symbol
+-- 20 minutes
+
+
+ 
