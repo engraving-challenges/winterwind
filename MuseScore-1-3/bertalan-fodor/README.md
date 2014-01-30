@@ -83,5 +83,8 @@ accent mark as well)
 -- Add a dot symbol
 -- 20 minutes
 
+#### M6
+- Nothing new, done in 10 minutes - had to touch almost every symbol though
+
 
  
