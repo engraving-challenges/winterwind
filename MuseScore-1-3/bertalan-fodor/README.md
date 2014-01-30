@@ -84,7 +84,19 @@ accent mark as well)
 -- 20 minutes
 
 #### M6
-- Nothing new, done in 10 minutes - had to touch almost every symbol though
+- Nothing new - had to touch almost every symbol though
+- 10 minutes
 
+#### M7
+- Fixed 8va, set as dotted
+- Fixed stem directions
+- Fixed symbol positions
+- Added parentheses
+- 5 minutes
+
+#### M8
+- Trick at the end: hidden beam, moved every note right 1 bit step and 4 small steps to align with left hand.
+- I didn't want to add one more bar, so just changed ending barline, added extra space after last note and added an F-clef symbol
+- 5 minutes
 
  
