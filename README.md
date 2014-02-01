@@ -32,14 +32,15 @@ You'll find it in the [PNG file](chopin-godowsky.png) in this directory.
 As this doesn't contain a title please also refer to
 [chopin-godowsky-title](titles.md).
 
-**Important:** please make sure you read the [instructions](http://github.com/engraving-challenges/main/blob/master/README.md#instructions) before starting any work!
+#### Page layout details
 
----
+- paper size is 230x299 mm,
+- line-width is 188 mm; 24 mm for the left margin and 18 mm for the right,
+- staves are about 7 mm high (~20 pt).
 
-Please remember: this is a challenge and only partly a contest. There is no deadline.
-The point is to try creating the most beautiful engraving with notation package of your choice,
-and document your progress on your way there.
+====
 
-For general information on the challenges as well as specific instructions
-for participants, please refer to the
-[main repository](https://github.com/engraving-challenges/main).
+You can find the score in the [estrella.png](estrella.png) file.
+
+**_Please make sure you read the [instructions](http://github.com/engraving-challenges/main/blob/master/README.md#instructions) before starting ANY work!_**
+
