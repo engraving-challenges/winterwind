@@ -40,7 +40,5 @@ As this doesn't contain a title please also refer to
 
 ====
 
-You can find the score in the [estrella.png](estrella.png) file.
-
 **_Please make sure you read the [instructions](http://github.com/engraving-challenges/main/blob/master/README.md#instructions) before starting ANY work!_**
 
