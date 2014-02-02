@@ -2,8 +2,8 @@ If you are new to Engraving Challenges,
 ---------------------------------------
 
 ...we suggest that you don't start with this one -
-rather, read the instructions in the
-[main repository](https://github.com/engraving-challenges/main)
+rather, read the instructions
+[here](https://github.com/engraving-challenges/main/blob/master/README.md)
 and then start by working on
 [this challenge](https://github.com/engraving-challenges/estrella).
 
@@ -40,5 +40,4 @@ As this doesn't contain a title please also refer to
 
 ====
 
-**_Please make sure you read the [instructions](http://github.com/engraving-challenges/main/blob/master/README.md#instructions) before starting ANY work!_**
-
+**_Please make sure you read the [instructions](https://github.com/engraving-challenges/main/blob/master/2-editing-workflow.md) before starting ANY work!_**
